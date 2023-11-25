@@ -6,11 +6,10 @@ use sorting::{
   insertion_sort::InsertionSortableList,
   selection_sort::SelectionSortableList,
   bubble_sort::BubbleSortableList,
-  quick_sort::QuickSortableList
+  quick_sort::QuickSortableList,
+  merge_sort::MergeSortableList,
+  heap_sort::HeapSortableList
 };
-
-use crate::sorting::{merge_sort::MergeSortableList, heap_sort::HeapSortableList};
-
 
 fn test_sorter<U, T>(list: & Vec<T>)
 where T : Ord + Clone, U : std::fmt::Debug + Sorter + SortableListBuilder<T> {
